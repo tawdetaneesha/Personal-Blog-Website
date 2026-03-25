@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanee Aesthetic Blog</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #555;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff6f91;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Layout */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Glass Cards */
+.post {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-8px) scale(1.01);
+}
+
+/* ✅ FIXED IMAGE SIZE */
+.post img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* 💅 HOVER EFFECT */
+.post img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.category {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category:hover {
+    background: #ffe0ec;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>💖 TaneeBlog</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>My Aesthetic Blog ✨</h1>
+    <p>Creative thoughts, soft vibes & learning journey</p>
+</div>
+
+<div class="container">
+
+    <div>
+
+        <div class="post">
+           <img src="post1.jpg">
+            <h3>My Coding Journey 💻</h3>
+            <p>Learning web development has been fun and creative. I love building aesthetic websites.</p>
+        </div>
+
+        <div class="post">
+          <img src="post2.jpg">
+            <h3>Music & Vibes 🎧</h3>
+            <p>Music helps me focus and relax while studying or designing.</p>
+        </div>
+
+        <div class="post">
+            <img src="post3.jpg">
+            <h3>Design Inspiration 🎨</h3>
+            <p>I get most of my inspiration from Pinterest and modern UI designs.</p>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+        <h3>Categories 🌸</h3>
+        <div class="category">Web Dev</div>
+        <div class="category">Design</div>
+        <div class="category">Lifestyle</div>
+        <div class="category">Learning</div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Taneesha Tawde
+</footer>
+
+</body>
+</html>
